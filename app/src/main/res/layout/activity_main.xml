@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:layout_margin="20dp"
+    tools:context="com.example.admin.actividadrepaso.MainActivity">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nombre: "
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textNombre"
+            android:layout_toRightOf="@id/textNombre"
+            android:hint="Escribe tu nombre"
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/textLocalizacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Localizacion: "
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/textNombre"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editLocalizacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textLocalizacion"
+            android:layout_toRightOf="@id/textLocalizacion"
+            android:hint="Localización"
+            android:textSize="25dp"/>
+        <CheckBox
+            android:id="@+id/cbInsertar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insertar"
+            android:layout_below="@id/textLocalizacion"
+            android:layout_marginTop="15dp"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/textLocalizacion"
+            android:layout_toRightOf="@+id/cbInsertar"
+            android:layout_marginBottom="10dp"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="hombre" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="mujer"/>
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/cuadro"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true">
+
+                <Button
+                    android:id="@+id/btnAbrir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Abrir" />
+
+                <Button
+                    android:id="@+id/btnSeleccionar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/btnAbrir"
+                    android:layout_marginTop="16dp"
+                    android:text="Seleccionar" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
